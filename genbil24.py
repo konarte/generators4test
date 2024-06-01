@@ -67,8 +67,6 @@ while len(vopr01)>=3:
     if str(question04) == str(question05):
         print(question04 +' <==> '+ question05)
 
-    bilet_num += 1
-
 
     print('РОССИЙСКИЙ УНИВЕРСИТЕТ КООПЕРАЦИИ')
     print('Кафедра информационных технологий и ЕНД')
