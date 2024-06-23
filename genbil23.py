@@ -20,9 +20,9 @@ def loadfile(path, spisok):
             
 
 
-loadfile('v01.txt', vopr01)
-loadfile('v02.txt', vopr02)
-loadfile('v03.txt', vopr03)
+loadfile('questions2301.txt', vopr01)
+loadfile('questions2302.txt', vopr02)
+loadfile('questions2303.txt', vopr03)
 
 while len(vopr01)>0:
 

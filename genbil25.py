@@ -22,7 +22,7 @@ def get_script_dir(follow_symlinks=True):
 
 
 
-bilet_num = int(input('Какой номер билета будет первым: ').strip() or "1")
+bilet_num = int(input('Какой номер билета будет первым: ').strip() or '1')
 #vopr01 - 100 вопросов по 1 баллу в билете - мы их просто удаляем из списка
 vopr01=[]
 #vopr02 - 11 тем по 1 баллу в билете - мы их тасуеми запоминаем сколько раз какой вопрос всплыл
@@ -39,8 +39,8 @@ def loadfile(path, spisok):
 
     
 def gen_shu(questions):
-    q4 = 'Команды Linux в области: ' + random.choice(questions)
-    q5 = 'Команды Linux в области: ' + random.choice(questions)
+    q4 = '' + random.choice(questions)
+    q5 = '' + random.choice(questions)
     if str(q4) == str(q5):
         q4, q5 = gen_shu(questions)
     return (q4, q5)
@@ -48,8 +48,8 @@ def gen_shu(questions):
             
 
 print(get_script_dir()+ '\\' +'question.txt')
-loadfile(get_script_dir()+ '\\' +'questions2401.txt', vopr01)
-loadfile(get_script_dir()+ '\\' +'questions2402.txt', vopr02)
+loadfile(get_script_dir()+ '\\' +'questions2501.txt', vopr01)
+loadfile(get_script_dir()+ '\\' +'questions2502.txt', vopr02)
 
 
 while len(vopr01)>=3:
@@ -68,11 +68,11 @@ while len(vopr01)>=3:
         print(question04 +' <==> '+ question05)
 
 
-    print('РОССИЙСКИЙ УНИВЕРСИТЕТ КООПЕРАЦИИ')
+    print('КОЛЛЕДЖ ПРИ РОССИЙСКОМ УНИВЕРСИТЕТЕ КООПЕРАЦИИ')
     print('Кафедра информационных технологий и ЕНД')
-    print('Дисциплина “Инструментальные средства информационных систем”')
+    print('Дисциплина "Введение в базы данных"')
     print('Курс 2. Факультет высшего образования')
-    print('Специальность “Информационные системы и технологии”')
+    #print('Специальность “Информационные системы и технологии”')
     print(' ')
     print('Экзаменационный билет № ', bilet_num)
     print(' ')

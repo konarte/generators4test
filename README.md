@@ -1,4 +1,8 @@
 # genbil23
- simple ticket generator from available questions
+ simple ticket generators from available questions
 
+genbil24
 Простейший генератор билетов по дисциплине “Инструментальные средства информационных систем”
+
+genbil25
+Простейший генератор билетов по дисциплине “Введение в базы данных”
